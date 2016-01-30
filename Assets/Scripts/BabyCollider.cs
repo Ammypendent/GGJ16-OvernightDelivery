@@ -6,6 +6,7 @@ public class BabyCollider : MonoBehaviour
 {
     public bool DoesBabyDisappear;
     public string ScorePhrase;
+    public int Score;
     private AudioSource soundSource;
 
     void Start()
