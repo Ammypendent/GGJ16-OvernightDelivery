@@ -10,6 +10,11 @@ public class ScoreTracker : MonoBehaviour
     private float comboTimer;
     public static int ComboNumber;
 
+
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+    }
 	// Use this for initialization
 	void Start () 
     {
@@ -50,6 +55,7 @@ public class ScoreTracker : MonoBehaviour
             if (displayIndex >= DisplayTexts.Length)
                 displayIndex = 0;
         }
+        print(scoretext);
     }
 
     void ShowScoreAdded(int comboScore)

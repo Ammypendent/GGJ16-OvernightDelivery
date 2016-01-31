@@ -23,6 +23,16 @@ public class Controls : MonoBehaviour {
     public float timeToChargeUp;
     public GameObject playerHead;
     Vector3 toTilt;
+    public AudioClip[] babySpawnSounds;
+
+    private ScoreTracker GameMaster;
+
+    void Awake()
+    {
+        GameMaster = GameObject.Find("GameMaster").GetComponent<ScoreTracker>();
+    }
+
+
 	// Use this for initialization
 	void Start () {
 		tossingTheBaby = false;
@@ -98,7 +108,10 @@ public class Controls : MonoBehaviour {
 
 				//babyRigidBody.AddForce(babyInHand.transform.TransformDirection (TossTheBaby ()));
                 babyRigidBody.velocity = babyInHand.transform.TransformDirection (TossTheBaby ());
+                RandomSound();
 			}
+
+            GameMaster.BabiesThrown += 1;
 			tossingTheBaby = false;
 		}
 	}
@@ -109,7 +122,7 @@ public class Controls : MonoBehaviour {
         mouseHoldTime = mouseHoldTime > timeToChargeUp ? timeToChargeUp : mouseHoldTime;
         float percent = mouseHoldTime / timeToChargeUp;
         float forwardVel = ((maxBabyVelocity - minBabyVelocity) * percent)+minBabyVelocity;
-        print("percent = "+ percent + " fwd vel "+ forwardVel);
+        //print("percent = "+ percent + " fwd vel "+ forwardVel);
 
         //Vector3 forwardForce = playerCenter.velocity * babyRigidBody.mass;
         //newVel.z += forwardVel * 10;
@@ -126,4 +139,11 @@ public class Controls : MonoBehaviour {
 		}
 		return isMoving;
 	}
+
+    private void RandomSound()
+    {
+        AudioSource babyAudio = babyInHand.GetComponent<AudioSource>();
+        babyAudio.clip = babySpawnSounds[Random.Range(0, babySpawnSounds.Length - 1)];
+        babyAudio.Play();
+    }
 }
