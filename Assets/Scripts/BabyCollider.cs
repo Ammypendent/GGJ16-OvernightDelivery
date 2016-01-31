@@ -10,8 +10,6 @@ public class BabyCollider : MonoBehaviour
     private AudioSource soundSource;
     private ScoreTracker GameMaster;
 
-
-
     void Start()
     {
         soundSource = GetComponent<AudioSource>();
@@ -22,9 +20,9 @@ public class BabyCollider : MonoBehaviour
 
 	void OnTriggerEnter(Collider baby)
 	{
-        if (string.IsNullOrEmpty(ScorePhrase))
+        if (ScorePhrase != "")
             ScorePhrase = "Dude set some goofy score text man!";
-        TheBaby babystats = baby.gameObject.GetComponent<TheBaby>();
+        TheBaby babystats = baby.GetComponent<TheBaby>();
         float TotalBabyScore = 0f;
         TotalBabyScore += babystats.hangtime * 10f;
         TotalBabyScore += babystats.rb.velocity.magnitude*5f;
