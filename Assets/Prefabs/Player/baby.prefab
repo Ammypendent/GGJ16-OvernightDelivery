@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2379278}
   - 95: {fileID: 9567750}
   - 54: {fileID: 5497444}
+  - 65: {fileID: 6538226}
   m_Layer: 0
   m_Name: baby
   m_TagString: Untagged
@@ -82,6 +83,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6538226
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.868588, y: 9.489233, z: 3.1849484}
+  m_Center: {x: 0.020293951, y: 0.24984927, z: -0.24811544}
 --- !u!95 &9567750
 Animator:
   serializedVersion: 3
