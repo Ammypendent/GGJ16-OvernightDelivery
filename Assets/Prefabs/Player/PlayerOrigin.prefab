@@ -62,6 +62,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485870}
+  - 114: {fileID: 11498118}
   m_Layer: 0
   m_Name: PlayerHead
   m_TagString: Untagged
@@ -114,7 +115,7 @@ GameObject:
   m_Layer: 0
   m_Name: babySpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -139,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.16, z: 0.82}
+  m_LocalPosition: {x: -0, y: -0.16, z: 0.737}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 400036}
@@ -371,8 +372,11 @@ MonoBehaviour:
   babyPrefab: {fileID: 138904, guid: 73c5eaa7feb7ba64185ac27a9acec599, type: 2}
   mainCamera: {fileID: 2016964}
   baseFowardVelocity: 1000
-  turnRate: 800
-  maxBabyVelocity: 1000
+  turnRate: 1600
+  minBabyVelocity: 2
+  maxBabyVelocity: 12
+  timeToChargeUp: 1.5
+  playerHead: {fileID: 113402}
 --- !u!114 &11452780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -398,6 +402,24 @@ MonoBehaviour:
   _head: {fileID: 0}
   wireframe: 0
   flip: {fileID: 11452780}
+--- !u!114 &11498118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e03d36aec8e4ca4d87c43e39d5ea610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 0
+  sensitivityX: 3
+  sensitivityY: 3
+  minimumX: -90
+  maximumX: 90
+  minimumY: -60
+  maximumY: 60
 --- !u!124 &12467634
 Behaviour:
   m_ObjectHideFlags: 1
