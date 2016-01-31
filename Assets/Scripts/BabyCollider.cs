@@ -22,8 +22,13 @@ public class BabyCollider : MonoBehaviour
 	{
         if (ScorePhrase != "")
             ScorePhrase = "Dude set some goofy score text man!";
-        GameMaster.AddScore(Score, ScorePhrase, gameObject.transform);
-        //Play Sound
+        TheBaby babystats = baby.GetComponent<TheBaby>();
+        float TotalBabyScore = 0f;
+        TotalBabyScore += babystats.hangtime * 10f;
+        TotalBabyScore += babystats.rb.velocity.magnitude*5f;
+        TotalBabyScore += Score;
+        GameMaster.AddScore((int)TotalBabyScore, ScorePhrase, gameObject.transform);
+        soundSource.Play(); //We will probably use mixer if we have time
         if (DoesBabyDisappear)
             Destroy(baby.gameObject);
         else
