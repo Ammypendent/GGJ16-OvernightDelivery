@@ -1,7 +1,5 @@
 fileFormatVersion: 2
-guid: fe8b29511d39c714b8dae609369d9f15
-timeCreated: 1454211996
-licenseType: Free
+guid: 2285374edce96c0429b698451775407c
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -10,8 +8,9 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: apartment_large_thin_short
+    9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -19,10 +18,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -30,7 +25,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -47,13 +42,13 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
-    normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalSmoothAngle: 10
+    splitTangentsAcrossUV: 0
+    normalImportMode: 1
     tangentImportMode: 1
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []
@@ -68,7 +63,7 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
-  additionalBone: 0
+  additionalBone: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

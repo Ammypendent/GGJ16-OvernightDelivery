@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 0e90725831864a84385a04232aeb5000
-timeCreated: 1454223077
-licenseType: Free
+guid: 298a34f1f6661ae47b4507e6a147672f
+timeCreated: 1447432533
+licenseType: Store
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -48,7 +48,7 @@ ModelImporter:
     4300012: Tree4Large
     4300014: Tree4Small
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
