@@ -23,6 +23,15 @@ public class Controls : MonoBehaviour {
     public float timeToChargeUp;
     public GameObject playerHead;
     Vector3 toTilt;
+
+    private ScoreTracker GameMaster;
+
+    void Awake()
+    {
+        GameMaster = GameObject.Find("GameMaster").GetComponent<ScoreTracker>();
+    }
+
+
 	// Use this for initialization
 	void Start () {
 		tossingTheBaby = false;
@@ -99,6 +108,8 @@ public class Controls : MonoBehaviour {
 				//babyRigidBody.AddForce(babyInHand.transform.TransformDirection (TossTheBaby ()));
                 babyRigidBody.velocity = babyInHand.transform.TransformDirection (TossTheBaby ());
 			}
+
+            GameMaster.BabiesThrown += 1;
 			tossingTheBaby = false;
 		}
 	}

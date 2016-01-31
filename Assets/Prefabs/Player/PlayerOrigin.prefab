@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5224267e-13, y: -0.00000032782555, z: -0.0000006854534}
+  m_LocalPosition: {x: 0, y: -0.00000032782555, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 423964}
@@ -177,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000000032424577, y: 0.29400024, z: 0.27199706}
+  m_LocalPosition: {x: 0, y: 0.29400024, z: 0.572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400036}
@@ -253,8 +253,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: b1fe67857c330204ebe21a5107ea48a1, type: 2}
-  - {fileID: 2100000, guid: 784fe92e42ac6fa4b9990e7d077b9156, type: 2}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -280,7 +279,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: ac4527b343af87b43a04f637964e3860, type: 2}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -302,14 +301,14 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126196}
-  m_Mesh: {fileID: 4300004, guid: 99253170e0dc4424fb2aa14e3cfafeb9, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1f1919dfed55f154998e5350fdfb3e76, type: 3}
 --- !u!33 &3351444
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177998}
-  m_Mesh: {fileID: 4300006, guid: 99253170e0dc4424fb2aa14e3cfafeb9, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 1f1919dfed55f154998e5350fdfb3e76, type: 3}
 --- !u!54 &5443758
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -323,7 +322,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 16
+  m_Constraints: 20
   m_CollisionDetection: 0
 --- !u!81 &8149340
 AudioListener:
@@ -369,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCenter: {fileID: 5443758}
   babySpawn: {fileID: 193334}
-  babyPrefab: {fileID: 138904, guid: 73c5eaa7feb7ba64185ac27a9acec599, type: 2}
+  babyPrefab: {fileID: 138904, guid: 1faecdc9ce947304a8a543270f3d3eab, type: 2}
   mainCamera: {fileID: 2016964}
   baseFowardVelocity: 1000
   turnRate: 1600
@@ -410,14 +409,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 113402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e03d36aec8e4ca4d87c43e39d5ea610, type: 3}
+  m_Script: {fileID: 11500000, guid: bec556c2b64d5004798211e927bc8d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 0
-  sensitivityX: 3
-  sensitivityY: 3
-  minimumX: -90
-  maximumX: 90
+  sensitivityX: 15
+  sensitivityY: 15
+  minimumX: -120
+  maximumX: 120
   minimumY: -60
   maximumY: 60
 --- !u!124 &12467634
