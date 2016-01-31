@@ -22,6 +22,7 @@ public class Controls : MonoBehaviour {
 	public float maxBabyVelocity;
     public float timeToChargeUp;
     public GameObject playerHead;
+    Vector3 toTilt;
 	// Use this for initialization
 	void Start () {
 		tossingTheBaby = false;
@@ -39,18 +40,29 @@ public class Controls : MonoBehaviour {
 		{//right turn
 			//playerCenter.transform.Rotate(Vector3.up * turnRate * Time.deltaTime);
 			sideVelocity = turnRate;
+            toTilt =new Vector3(playerCenter.transform.localEulerAngles.x,
+                playerCenter.transform.localEulerAngles.y,
+                -5);
+            
 		}
 
 		else if (Input.GetKey(KeyCode.A))
 		{
 			//playerCenter.transform.Rotate(-Vector3.up * turnRate * Time.deltaTime);
 			sideVelocity = -turnRate;
+            toTilt =new Vector3(playerCenter.transform.localEulerAngles.x,
+                playerCenter.transform.localEulerAngles.y,
+                5);
 		}
 		else
 		{
 			sideVelocity = 0;
+            toTilt =new Vector3(playerCenter.transform.localEulerAngles.x,
+                playerCenter.transform.localEulerAngles.y,
+                0);
 		}
 		playerCenter.velocity = playerCenter.transform.TransformDirection(new Vector3(sideVelocity * Time.deltaTime, 0, forwardVelocity));
+        playerCenter.transform.rotation = Quaternion.Slerp(playerCenter.transform.localRotation, Quaternion.Euler(toTilt), 0.2f);
 
 		//do tilt
 
