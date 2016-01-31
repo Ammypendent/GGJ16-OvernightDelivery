@@ -80,7 +80,7 @@ public class Controls : MonoBehaviour {
 		//mouse velocity
 		if (Input.GetMouseButtonDown(0) && !tossingTheBaby) 
 		{
-			babyInHand = Instantiate(babyPrefab,babySpawn.transform.position,babySpawn.transform.rotation) as GameObject;
+            babyInHand = Instantiate(babyPrefab,babySpawn.transform.position,babySpawn.transform.rotation) as GameObject;
 			babyRigidBody = babyInHand.GetComponent<Rigidbody> ();
 			//babyRigidBody.useGravity = false;
 			//mouseStartPos = Input.mousePosition;
