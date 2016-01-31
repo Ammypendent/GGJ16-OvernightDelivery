@@ -71,8 +71,6 @@ public class Controls : MonoBehaviour {
 			} else {
 				mouseDragTime = 0;
 			}
-			//babyRigidBody.transform.position = babySpawn.transform.position;
-			//babyRigidBody.transform.rotation = babySpawn.transform.rotation;
 			babyRigidBody.velocity = playerCenter.velocity;
 			//print (mouseDragTime);
 		}
@@ -82,10 +80,7 @@ public class Controls : MonoBehaviour {
 			if (babyInHand != null) {
 				//print ("baby in hand");
 				babyRigidBody.useGravity = true;
-				mouseEndPos = mainCamera.ScreenToViewportPoint (Input.mousePosition);//Input.mousePosition;
-				/*babyRigidBody.velocity = babyInHand.transform.TransformDirection (
-					TossTheBaby (mouseStartPos,
-						mouseEndPos, mouseDragTime,forwardVelocity));*/
+				mouseEndPos = mainCamera.ScreenToViewportPoint (Input.mousePosition);
 
 				babyRigidBody.AddForce(babyInHand.transform.TransformDirection (
 					TossTheBaby (mouseStartPos,
@@ -98,23 +93,11 @@ public class Controls : MonoBehaviour {
 
 	public Vector3 TossTheBaby(Vector3 startPos, Vector3 endPos, float time, float forwardVelocity)
 	{
-		/*
-		float velX = ((endPos.x - startPos.x) / time) * 1;//0.005f;
-		float velY = ((endPos.y - startPos.y) / time)*0.5f;//0.005f;
-		float modVelY = velY<0 ? 0:velY;
-		float velZ = (forwardVelocity)+modVelY / time;//the forward velocity of the player plus a seed.
-		print ("forward velocity is "+ velZ) ;
-		if (velZ > maxBabyVelocity)
-		{
-			velZ = maxBabyVelocity;
-		}
-		//+forward
-		print (velX+" "+velY);*/
 		float velX = ((endPos.x - startPos.x) / time) * 100;//0.005f;
 		float velY = ((endPos.y - startPos.y) / time)*20;//0.005f;
 		float modVelY = velY<0 ? 0:velY;
 		float velZ = (forwardVelocity)+modVelY / time;//the forward velocity of the player plus a seed.
-		print ("forward velocity is "+ velZ) ;
+		//print ("forward velocity is "+ velZ) ;
 		if (velZ > maxBabyVelocity)
 		{
 			velZ = maxBabyVelocity;

@@ -176,7 +176,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.294, z: 0.272}
+  m_LocalPosition: {x: 0.000000032424577, y: 0.29400024, z: 0.27199706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400036}
@@ -189,8 +189,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108820}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 50.8, y: 12.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 760.78, y: 42.71, z: 381}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 485870}
   - {fileID: 480388}
@@ -224,7 +224,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -370,6 +370,9 @@ MonoBehaviour:
   babySpawn: {fileID: 193334}
   babyPrefab: {fileID: 138904, guid: 73c5eaa7feb7ba64185ac27a9acec599, type: 2}
   mainCamera: {fileID: 2016964}
+  baseFowardVelocity: 1000
+  turnRate: 800
+  maxBabyVelocity: 1000
 --- !u!114 &11452780
 MonoBehaviour:
   m_ObjectHideFlags: 1
