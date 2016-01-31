@@ -336,7 +336,7 @@ Transform:
   - {fileID: 802412489}
   - {fileID: 1016429368}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 15
 --- !u!1001 &48261639
 Prefab:
   m_ObjectHideFlags: 0
@@ -1364,7 +1364,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5431094, guid: ef06ad3bb7f00f949aac0d89738f0f6f, type: 2}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2312518, guid: ef06ad3bb7f00f949aac0d89738f0f6f, type: 2}
       propertyPath: m_ReceiveShadows
@@ -1933,7 +1933,7 @@ Transform:
   - {fileID: 977944449}
   - {fileID: 1832802475}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 13
 --- !u!1 &482499552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,7 +2011,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1bbb91c8d96cb2446a07151ce95d1f0f, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 482499552}
-  m_LocalRotation: {x: -0.0037776504, y: 0.7070968, z: 0.7070967, w: 0.0037776502}
+  m_LocalRotation: {x: -0.00377765, y: 0.70709676, z: 0.70709664, w: 0.0037776497}
   m_LocalPosition: {x: -11.1, y: 0, z: 280.1}
   m_LocalScale: {x: 3.740136, y: 3.7401352, z: 3.7401352}
   m_Children:
@@ -2026,7 +2026,7 @@ Transform:
   - {fileID: 1393114357}
   - {fileID: 1930882841}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
 --- !u!1001 &513037204
 Prefab:
   m_ObjectHideFlags: 0
@@ -3216,7 +3216,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!1 &892311126
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,6 +3358,7 @@ GameObject:
   - 33: {fileID: 899218970}
   - 64: {fileID: 899218969}
   - 23: {fileID: 899218968}
+  - 54: {fileID: 899218971}
   m_Layer: 0
   m_Name: Plane (1)
   m_TagString: Untagged
@@ -3422,6 +3423,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899218966}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &899218971
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899218966}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &917251951
 GameObject:
   m_ObjectHideFlags: 0
