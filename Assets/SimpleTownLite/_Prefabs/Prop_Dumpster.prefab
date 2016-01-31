@@ -29,8 +29,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0.7554993, z: 0, w: 0.6551495}
-  m_LocalPosition: {x: 631.8, y: -0.7, z: 434.2}
+  m_LocalRotation: {x: 0, y: 0.9700267, z: 0, w: 0.24299867}
+  m_LocalPosition: {x: 612.7378, y: -0.75349236, z: 446.96158}
   m_LocalScale: {x: 2.2737756, y: 2.2737749, z: 2.2737749}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,8 +98,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d702e825404edbc4bbc551aa09e9ca5d, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: c0203b6976b51d942a2a747c3c9374d2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 0
   ScorePhrase: Dumpster Baby
-  Score: 0
+  Score: 150
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
