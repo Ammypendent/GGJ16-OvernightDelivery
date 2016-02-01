@@ -12,8 +12,8 @@ GameObject:
   - 23: {fileID: 2375240}
   - 136: {fileID: 13657338}
   - 82: {fileID: 8284080}
-  - 114: {fileID: 11471154}
   - 54: {fileID: 5416892}
+  - 114: {fileID: 11436002}
   m_Layer: 0
   m_Name: Tree4Small
   m_TagString: Untagged
@@ -91,7 +91,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d702e825404edbc4bbc551aa09e9ca5d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -155,7 +155,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &11471154
+--- !u!114 &11436002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -166,9 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dca9f040ff9f6c4d970318b9722821e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoesBabyDisappear: 0
-  ScorePhrase: If a baby hits a tree???
-  Score: 20
+  DoesBabyDisappear: 1
+  ScorePhrase: 
+  Score: 0
 --- !u!136 &13657338
 CapsuleCollider:
   m_ObjectHideFlags: 1

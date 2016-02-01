@@ -66,7 +66,7 @@ GameObject:
   - 82: {fileID: 8298166}
   - 114: {fileID: 11414898}
   m_Layer: 0
-  m_Name: window4 (1)
+  m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,9 +114,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -0.004075604, y: -0.70068717, z: -0.0044795554, w: 0.713443}
-  m_LocalPosition: {x: 627.4361, y: -0.087786674, z: 422.29382}
-  m_LocalScale: {x: 2.651394, y: 2.6513937, z: 2.6513937}
+  m_LocalRotation: {x: -0.48960632, y: -0.5042214, z: -0.5100188, w: -0.49591058}
+  m_LocalPosition: {x: -171.12181, y: 36.192047, z: -0.023475895}
+  m_LocalScale: {x: 0.7089032, y: 0.7089031, z: 0.7089027}
   m_Children:
   - {fileID: 433582}
   - {fileID: 494250}
@@ -303,7 +303,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 53f765c656eac1d47ad76a686dc95bbe, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -377,7 +377,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 53f765c656eac1d47ad76a686dc95bbe, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -451,7 +451,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 736144acbd98c8145b922c61e1b6b252, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -525,7 +525,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 736144acbd98c8145b922c61e1b6b252, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -599,7 +599,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c0ebc5415c930a64ca871bf9a2a04b55, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -674,9 +674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dca9f040ff9f6c4d970318b9722821e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  DoesBabyDisappear: 0
+  ScorePhrase: Special Delivery
+  Score: 300
 --- !u!114 &11441504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!114 &11457888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -703,8 +703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!114 &11492440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -717,8 +717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!114 &11493712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -731,8 +731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
