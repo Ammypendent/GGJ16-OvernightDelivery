@@ -26,7 +26,7 @@ public class HackJobMenu : MonoBehaviour {
                 if (hit.transform.gameObject.tag == "StartButton")
                 {
                     print("Time to start Game");
-                    //Application Load level
+                    Application.LoadLevel(1);
                 }
                 else if (hit.transform.gameObject.tag == "CreditsButton")
                 {
@@ -37,6 +37,7 @@ public class HackJobMenu : MonoBehaviour {
                 else if (hit.transform.gameObject.tag == "ExitButton")
                 {
                     print("Time to flee the game!");
+                    Application.Quit();
                 }
                 else if (hit.transform.gameObject.tag == "BackButton")
                 {
