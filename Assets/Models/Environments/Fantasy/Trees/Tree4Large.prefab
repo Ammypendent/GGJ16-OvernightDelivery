@@ -28,7 +28,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 901.7571, y: -0.1277388, z: 447.02682}
+=======
+  m_LocalPosition: {x: 963, y: 0, z: 478}
+>>>>>>> origin/master
   m_LocalScale: {x: 0.03591195, y: 0.03591196, z: 0.03591196}
   m_Children: []
   m_Father: {fileID: 0}
@@ -167,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 0
-  ScorePhrase: If a baby hit a tree???
-  Score: 20
+  ScorePhrase: 
+  Score: 0
 --- !u!136 &13622258
 CapsuleCollider:
   m_ObjectHideFlags: 1

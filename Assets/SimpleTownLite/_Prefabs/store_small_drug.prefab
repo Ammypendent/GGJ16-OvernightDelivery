@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
   ScorePhrase: Child Labor
-  Score: 250
+  Score: 300
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

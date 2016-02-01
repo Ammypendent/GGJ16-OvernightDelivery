@@ -98,7 +98,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: d702e825404edbc4bbc551aa09e9ca5d, type: 3}
+=======
+  m_audioClip: {fileID: 8300000, guid: c0203b6976b51d942a2a747c3c9374d2, type: 3}
+>>>>>>> origin/master
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -179,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 0
   ScorePhrase: Dumpster Baby
-  Score: 0
+  Score: 150
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

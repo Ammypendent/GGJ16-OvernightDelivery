@@ -66,7 +66,7 @@ GameObject:
   - 82: {fileID: 8298166}
   - 114: {fileID: 11414898}
   m_Layer: 0
-  m_Name: window4 (1)
+  m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,9 +674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dca9f040ff9f6c4d970318b9722821e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  DoesBabyDisappear: 0
+  ScorePhrase: Special Delivery
+  Score: 300
 --- !u!114 &11441504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!114 &11457888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -703,8 +703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!114 &11492440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -717,8 +717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!114 &11493712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -731,8 +731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoesBabyDisappear: 1
-  ScorePhrase: 
-  Score: 0
+  ScorePhrase: Special Delivery
+  Score: 250
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
