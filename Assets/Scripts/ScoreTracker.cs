@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScoreTracker : MonoBehaviour 
 {
@@ -9,6 +10,9 @@ public class ScoreTracker : MonoBehaviour
     private int displayIndex;
     private float comboTimer;
     public static int ComboNumber;
+    public Text scoreTextUI;
+    public Text babiesTossedText;
+    public Text message;
 
 
     void Awake()
@@ -21,7 +25,6 @@ public class ScoreTracker : MonoBehaviour
         BabiesThrown = 0;
         GameScore = 0;
         ComboNumber = 1;
-        
 	}
 	
 	// Update is called once per frame
@@ -36,6 +39,8 @@ public class ScoreTracker : MonoBehaviour
                 ComboNumber = 1;
             }
         }
+
+        babiesTossedText.text = BabiesThrown.ToString();
 	}
 
     /// <summary>
@@ -44,18 +49,23 @@ public class ScoreTracker : MonoBehaviour
     /// <param name="score"></param>
     public void AddScore(int score, string scoretext, Transform location)
     {
+        
         GameScore += score * ComboNumber;
         ShowScoreAdded(score * ComboNumber);
         comboTimer = 3f;
         ComboNumber += 1;
-        if (DisplayTexts.Length > 1)
+        /*
+        if (DisplayTexts.Length > 0)
         {
             DisplayTexts[displayIndex].DisplayMessage(scoretext, location);
             displayIndex++;
             if (displayIndex >= DisplayTexts.Length)
                 displayIndex = 0;
         }
-        print(scoretext);
+        */
+        message.text = scoretext;
+        scoreTextUI.text = GameScore.ToString();
+        print(score.ToString());
     }
 
     void ShowScoreAdded(int comboScore)

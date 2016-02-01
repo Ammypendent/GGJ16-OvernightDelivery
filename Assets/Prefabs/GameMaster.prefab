@@ -42,6 +42,9 @@ MonoBehaviour:
   BabiesThrown: 0
   GameScore: 0
   DisplayTexts: []
+  scoreTextUI: {fileID: 0}
+  babiesTossedText: {fileID: 0}
+  message: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

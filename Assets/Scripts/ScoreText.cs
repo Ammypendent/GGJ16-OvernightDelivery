@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour 
 {
     public string displayText;
     private bool displaying;
     private float displayTime;
+    public Text message;
 
 	// Use this for initialization
 	void Start () 
@@ -31,5 +33,7 @@ public class ScoreText : MonoBehaviour
         transform.position = displayLocation;
         displayTime = 3f;
         displayText = text;
+        message.text = displayText;
+        print("shit happened: " + text);
     }
 }

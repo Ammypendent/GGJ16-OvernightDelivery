@@ -20,13 +20,14 @@ public class BabyCollider : MonoBehaviour
 
 	void OnTriggerEnter(Collider baby)
 	{
-        if (ScorePhrase != "")
+        if (string.IsNullOrEmpty(ScorePhrase))
             ScorePhrase = "Dude set some goofy score text man!";
         TheBaby babystats = baby.GetComponent<TheBaby>();
         float TotalBabyScore = 0f;
         TotalBabyScore += babystats.hangtime * 10f;
         TotalBabyScore += babystats.rb.velocity.magnitude*5f;
         TotalBabyScore += Score;
+        print("sending text " + ScorePhrase);
         GameMaster.AddScore((int)TotalBabyScore, ScorePhrase, gameObject.transform);
         soundSource.Play(); //We will probably use mixer if we have time
         if (DoesBabyDisappear)

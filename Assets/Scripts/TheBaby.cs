@@ -9,6 +9,7 @@ public class TheBaby : MonoBehaviour
     public Material blue;
     public Material pink;
     public Renderer changeMe;
+    public AudioSource babyAudio;
 
     void Start () 
     {
