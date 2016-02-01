@@ -13,19 +13,19 @@ public class GameController : MonoBehaviour
 	
 	void Start () 
     {
-        //Music.ChangeSong(1, 1f);
+        Music.ChangeSong(0, 2f);
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-	    if (Input.GetKeyDown("1"))
+	   /* if (Input.GetKeyDown("1"))
         {
             Music.ChangeSong(0, 1f);
         }
         if (Input.GetKeyDown("2"))
         {
             Music.ChangeSong(1, 1f);
-        }
+        }*/
 	}
 }
