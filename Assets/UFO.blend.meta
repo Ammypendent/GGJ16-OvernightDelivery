@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 309655fcb34e6584bb7f69dd7bb03ceb
-timeCreated: 1454223077
-licenseType: Free
+guid: b298b518e394f894f855b8951e56a555
+timeCreated: 1454285967
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -39,7 +39,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 0
+    importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -54,7 +54,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 4
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
